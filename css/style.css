@@ -1,0 +1,54 @@
+
+a{
+    color: inherit;
+}
+
+#navbar{
+    background-color: #926eee;
+}
+
+#imgPerfil{
+    max-width: 50px;
+    /* margin: 3px; */
+}
+
+#divDireitaNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+#botaoLogin{
+    max-height: 50px;
+}
+
+#rowBtnInput{
+    display: flex;
+    justify-content: center;
+}
+
+#previewImgUsuario{
+    max-width: 50px;
+}
+
+#corpoModal{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+#imgProd{
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    padding-left: 0;
+}
+
+.row-centro{
+    display: flex;
+    justify-content: center;
+}

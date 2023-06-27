@@ -1,7 +1,7 @@
 <?php
 
     session_start();
-    include_once("paginas.php");
+    include_once("php/paginas.php");
 
     if (isset($_GET['pagina'])) {
         $pagina = $_GET['pagina'];
@@ -25,7 +25,7 @@
     <title>API</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
             <form action="login.php" method="GET" class="col s12">
                 <div class="row">
                     <div class="input-field col s6 offset-s3">
-                        <h2>Faça Login:</h2>
+                        <h2>Faça Login: (Não Funcional)</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="row" id="rowBtnInput">
                     <div class="input-field col">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
@@ -90,9 +90,6 @@
                 switch ($pagina) {
                     case 'img':
                         adcImgUsuario($logado);
-                        if (isset($_SESSION['msg_cad_img'])) {
-                            echo($_SESSION['msg_cad_img']);
-                        }
                         break;
                     
                     case 'produtos':
